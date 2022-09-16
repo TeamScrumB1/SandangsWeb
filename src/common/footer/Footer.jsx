@@ -8,7 +8,9 @@ const Footer = () => {
         <div className='container grid2'>
           <div className='box'>
             <img src="/static/media/logo.fbe45a1c6a198423fdef30faddbf45e9.svg" alt=""></img>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat et lectus vel ut sollicitudin elit at amet.</p>
+            <p>Aplikasi marketplace fashion yang didukung oleh teknologi AR swapping clothes yang dapat memilih baju sesuai selera
+              dan bisa custom sendiri baju yang diinginkan oleh desainer dan konveksi pilihan anda sendiri
+            </p>
             <div className='icon d_flex'>
               <div className='img d_flex'>
                 <i class='fa-brands fa-google-play'></i>
@@ -44,9 +46,9 @@ const Footer = () => {
           <div className='box'>
             <h2>Contact Us</h2>
             <ul>
-              <li>70 Washington Square South, New York, NY 10012, United States </li>
-              <li>Email: uilib.help@gmail.com</li>
-              <li>Phone: +1 1123 456 780</li>
+              <li>Pens Sky Venture, Politeknik Elektronika Negeri Surabaya </li>
+              <li>Email: sandangs@gmail.com</li>
+              <li>Phone: 0854327362736</li>
             </ul>
           </div>
         </div>
