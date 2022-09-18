@@ -1,0 +1,36 @@
+.flash {
+  background: #f6f9fc;
+  padding: 50px 0;
+}
+
+.discount {
+  background-color: #0F70B7;
+}
+
+.price button {
+  color: #0F70B7;
+}
+
+.price button:hover{
+  background-color: #0F70B7;
+}
+
+h4 {
+  color: #0F70B7;
+}
+
+.control-btn .next {
+  background-color: #0F70B7;
+}
+
+.control-btn .next:hover {
+  background-color: #094774;
+}
+
+.control-btn .prev {
+  background-color: #0F70B7;
+}
+
+.control-btn .prev:hover {
+  background-color: #094774;
+}
