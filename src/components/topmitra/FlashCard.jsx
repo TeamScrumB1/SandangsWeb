@@ -67,9 +67,9 @@ const FlashCard = ({ productItems, addToCart }) => {
                     {/* step : 3  
                      if hami le button ma click garryo bahne 
                     */}
-                    <button onClick={() => addToCart(productItems)}>
-                      <i className='fa fa-plus'></i>
-                    </button>
+                    {/* <button onClick={() => addToCart(productItems)}> */}
+                      {/* <i className='fa fa-plus'></i>
+                    </button> */}
                   </div>
                 </div>
               </div>
