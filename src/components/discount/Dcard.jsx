@@ -8,10 +8,10 @@ import "../newarrivals/style.css"
 const Dcard = () => {
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     slidesToShow: 6,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
   }
   return (
     <>

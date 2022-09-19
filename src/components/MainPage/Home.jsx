@@ -1,4 +1,6 @@
 import React from "react"
+import Dcard from "../discount/Dcard"
+import Ddata from "../discount/Ddata"
 import Categories from "./Categories"
 import "./Home.css"
 import SliderHome from "./Slider"

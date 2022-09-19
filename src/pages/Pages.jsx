@@ -9,18 +9,20 @@ import Annocument from "../components/annocument/Annocument"
 import Wrapper from "../components/wrapper/Wrapper"
 import TopMitra from "../components/topmitra/TopMitra"
 
+
+
 const Pages = ({ productItems, addToCart, CartItem, shopItems }) => {
   return (
     <>
       <Home CartItem={CartItem} />
+      <Discount />
       <FlashDeals productItems={productItems} addToCart={addToCart} />
       <TopMitra productItems={productItems} addToCart={addToCart} />
-      <TopCate />
+      {/* <TopCate />
       <NewArrivals />
-      <Discount />
       <Shop shopItems={shopItems} addToCart={addToCart} />
       <Annocument />
-      <Wrapper />
+      <Wrapper /> */}
     </>
   )
 }
