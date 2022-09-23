@@ -1,5 +1,14 @@
+footer .box-1 img{
+  margin-top: -50px;
+  margin-bottom: -15px;
+}
+
+footer .box-1{
+  padding-right: 50px;
+}
+
 footer {
-  background-color: #0f3460;
+  background-color: #0F70B7;
   padding: 100px 0;
   color: #fff;
 }
@@ -10,7 +19,7 @@ footer h1 {
   font-style: italic;
 }
 footer .img {
-  background-color: #0c2a4d;
+  background-color: #072b53;
   padding: 15px 20px;
   border-radius: 5px;
 }

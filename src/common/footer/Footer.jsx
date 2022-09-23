@@ -6,9 +6,9 @@ const Footer = () => {
     <>
       <footer>
         <div className='container grid2'>
-          <div className='box'>
-            <img src="/static/media/logo.fbe45a1c6a198423fdef30faddbf45e9.svg" alt=""></img>
-            <p>Aplikasi marketplace fashion yang didukung oleh teknologi AR swapping clothes yang dapat memilih baju sesuai selera
+          <div className='box-1'>
+            <img src="././images/sandangs/sandangswhite.png" alt=""></img>
+            <p>Sebuah aplikasi berbasis desktop dan mobile yang menjadi marketplace fashion yang didukung oleh teknologi AR Swapping Clothes yang dapat memilih baju sesuai selera
               dan bisa custom sendiri baju yang diinginkan oleh desainer dan konveksi pilihan anda sendiri
             </p>
             <div className='icon d_flex'>
@@ -16,21 +16,21 @@ const Footer = () => {
                 <i class='fa-brands fa-google-play'></i>
                 <span>Google Play</span>
               </div>
-              <div className='img d_flex'>
+              {/* <div className='img d_flex'>
                 <i class='fa-brands fa-app-store-ios'></i>
                 <span>App Store</span>
-              </div>
+              </div> */}
             </div>
           </div>
 
           <div className='box'>
             <h2>About Us</h2>
             <ul>
-              <li>Careers</li>
-              <li>Our Stores</li>
-              <li>Our Cares</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
+              <li>Sandangs Mall</li>
+              <li>Pre-order</li>
+              <li>Fitting Room</li>
+              <li>Sandangs Desainer</li>
+              <li>Sandangs Mitra Produksi</li>
             </ul>
           </div>
           <div className='box'>
@@ -47,8 +47,10 @@ const Footer = () => {
             <h2>Contact Us</h2>
             <ul>
               <li>Pens Sky Venture, Politeknik Elektronika Negeri Surabaya </li>
-              <li>Email: sandangs@gmail.com</li>
-              <li>Phone: 0854327362736</li>
+              <li>Email: </li>
+              <li>sandangs.indonesia@gmail.com</li>
+              <li>Instagram : </li>
+              <li>sandangs.indonesia</li>
             </ul>
           </div>
         </div>
