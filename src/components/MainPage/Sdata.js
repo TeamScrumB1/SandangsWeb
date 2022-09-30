@@ -1,21 +1,21 @@
 const Sdata = [
   {
     id: 1,
-    title: "50% Off in Sandangs",
-    desc: "Baju bermutu tinggi bisa di custom sesuai selera anda sendiri",
-    cover: "./images/SlideCard/slide-1s.png",
+    // title: "50% Off in Sandangs",
+    // desc: "Baju bermutu tinggi bisa di custom sesuai selera anda sendiri",
+    cover: "./images/SlideCard/banner01.png",
   },
   {
     id: 2,
-    title: "50% Off in Sandangs",
-    desc: "Baju bermutu tinggi bisa di custom sesuai selera anda sendiri",
-    cover: "./images/SlideCard/slide-2s.png",
+    // title: "50% Off in Sandangs",
+    // desc: "Baju bermutu tinggi bisa di custom sesuai selera anda sendiri",
+    cover: "./images/SlideCard/banner02.png",
   },
   {
     id: 3,
-    title: "50% Off For Your First Shopping",
-    desc: "Baju bermutu tinggi bisa di custom sesuai selera anda sendiri",
-    cover: "./images/SlideCard/slide-3s.png",
+    // title: "50% Off For Your First Shopping",
+    // desc: "Baju bermutu tinggi bisa di custom sesuai selera anda sendiri",
+    cover: "./images/SlideCard/banner03.png",
   },
   // {
   //   id: 4,

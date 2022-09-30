@@ -1,22 +1,22 @@
 const Ddata = [
   {
-    cover: "./images/discount/designer1.png",
+    cover: "./images/discount/designer01.png",
     name: <button className='btn-primary'>Desainer</button>,
   },
   {
-    cover: "./images/discount/preorder1.png",
+    cover: "./images/discount/PO3.png",
     name: <button className='btn-primary'>Pre Order</button>,
   },
   {
-    cover: "./images/discount/Mall1.png",
+    cover: "./images/discount/mall2.png",
     name: <button className='btn-primary'>Mall</button>,
   },
   {
-    cover: "./images/discount/mitra1.png",
+    cover: "./images/discount/MP4.png",
     name: <button className='btn-primary'>Mitra Produksi</button>,
   },
   {
-    cover: "./images/discount/fitting1.png",
+    cover: "./images/discount/FR5.png",
     name: <button className='btn-primary'>Fitting Room</button>,
   },
 ]

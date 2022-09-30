@@ -40,7 +40,7 @@ const Search = ({ CartItem }) => {
 
           <div className='button2'>  
           <div className='button'></div>
-          <button type="button" class="btn btn-primary">Daftar</button>
+          <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="true" autocomplete="off"> Sign Up </button>
           </div>
         </div>
       </section>
