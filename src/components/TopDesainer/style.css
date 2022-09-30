@@ -7,6 +7,21 @@
   background-color: #0F70B7;
 }
 
+.button {
+  color: #ffffff;
+  text-align: center;
+  background-color: #0F70B7;;
+  box-sizing: border-box;
+  margin: 2px;
+  font: 25px;
+  padding: 1px 7px 2px;
+  border-width: 1px;
+  border-radius: 5%;
+  border-color: #0F70B7;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
 .price button {
   color: #0F70B7;
 }
