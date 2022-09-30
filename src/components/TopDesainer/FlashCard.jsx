@@ -55,7 +55,7 @@ const FlashCard = ({ productItems, addToCart }) => {
                   </div>
                 </div>
                 <div className='product-details'>
-                    <h3 className="tengah">{productItems.name}</h3>
+                    <h4 className="tengah">{productItems.name}</h4>
                   <div className="tengah">
                     <div className='rate'>
                       <i className='fa fa-star'></i>
@@ -67,7 +67,7 @@ const FlashCard = ({ productItems, addToCart }) => {
                   </div>
                   <div className="tengah">
                     <div className='price'>
-                      <h4>{productItems.price} </h4>
+                      <h3>{productItems.price} </h3>
                       {/* step : 3  
                       if hami le button ma click garryo bahne 
                       */}
