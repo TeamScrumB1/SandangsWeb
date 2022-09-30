@@ -108,6 +108,8 @@ button {
   font-weight: bold;
   color: #fff;
   border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 .top {
   margin-top: 80px;
@@ -152,6 +154,7 @@ button {
   display: flex;
   justify-content: space-between;
   color: #e94560;
+  text-align: center;
 }
 .price button {
   background: none;

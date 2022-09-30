@@ -55,24 +55,30 @@ const FlashCard = ({ productItems, addToCart }) => {
                   </div>
                 </div>
                 <div className='product-details'>
-                  <h3>{productItems.name}</h3>
-                  <div className='rate'>
-                    <i className='fa fa-star'></i>
-                    <i className='fa fa-star'></i>
-                    <i className='fa fa-star'></i>
-                    <i className='fa fa-star'></i>
-                    <i className='fa fa-star'></i>
+                    <h3 className="tengah">{productItems.name}</h3>
+                  <div className="tengah">
+                    <div className='rate'>
+                      <i className='fa fa-star'></i>
+                      <i className='fa fa-star'></i>
+                      <i className='fa fa-star'></i>
+                      <i className='fa fa-star'></i>
+                      <i className='fa fa-star'></i>
+                    </div>
                   </div>
-                  <div className='price'>
-                    <h4>{productItems.price} </h4>
-                    {/* step : 3  
-                     if hami le button ma click garryo bahne 
-                    */}
-                    {/* <button onClick={() => addToCart(productItems)}>
-                      <i className='fa fa-plus'></i>
-                    </button> */}
+                  <div className="tengah">
+                    <div className='price'>
+                      <h4>{productItems.price} </h4>
+                      {/* step : 3  
+                      if hami le button ma click garryo bahne 
+                      */}
+                      {/* <button onClick={() => addToCart(productItems)}>
+                        <i className='fa fa-plus'></i>
+                      </button> */}
+                    </div>
                   </div>
-                  <Button/>
+                  <div className="tengah">
+                    <Button/>
+                  </div>
                 </div>
               </div>
             </div>
