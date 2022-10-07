@@ -87,7 +87,7 @@ class ListKonveksi extends Component {
                                         </div>
                                         <div className="tengah">
                                             <div className='price'>
-                                                <h3 key={konveksi.id}>{konveksi.rating} </h3>
+                                                <h3 key={konveksi.id}>{konveksi.bio} </h3>
                                                 {/* step : 3
                                                 if hami le button ma click garryo bahne
                                                 */}

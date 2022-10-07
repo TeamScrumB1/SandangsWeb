@@ -86,7 +86,7 @@ class ListDesainer extends Component {
                                         </div>
                                         <div className="tengah">
                                             <div className='price'>
-                                                <h3 key={desainer.id}>{desainer.tarif} </h3>
+                                                <h3 key={desainer.id}>{desainer.bio} </h3>
                                                 {/* step : 3
                                                 if hami le button ma click garryo bahne
                                                 */}
