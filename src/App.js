@@ -7,6 +7,7 @@ import Data from "./components/Data"
 import Cart from "./common/Cart/Cart"
 import Footer from "./common/footer/Footer"
 import Sdata from "./components/shops/Sdata"
+import ListKonveksi from "./components/TopMitra/ListKonveksi"
 
 function App() {
   /*
@@ -74,9 +75,7 @@ function App() {
         <Switch>
           <Route path='/' exact>
             <Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems} />
-          </Route>
-          <Route path='/cart' exact>
-            <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} />
+            <ListKonveksi/>
           </Route>
         </Switch>
         <Footer />
