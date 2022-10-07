@@ -37,13 +37,13 @@ const SampleNextArrow = (props) => {
   }
   
 
-const api = 'https://fashionizt.yufagency.com/koneksi_konveksi.php'
+const api = 'https://fashionizt.yufagency.com/koneksi_desainer.php'
 
-class ListKonveksi extends Component {
+class ListDesainer extends Component {
     constructor(props){
         super(props)
         this.state={
-            konveksi:[],
+            desainer:[],
             response:'',
             display:"none",
         }
@@ -52,30 +52,29 @@ class ListKonveksi extends Component {
     componentDidMount(){
         axios.get(api).then(res => {
           this.setState({
-            konveksi: res.data.konveksi
+            desainer: res.data.desainer
           })
         } )
     }
-    
-    
+
     render() {
         return (
             <><>
                 <Slider {...settings}>
-                    {this.state.konveksi.map((konveksi) => {
+                    {this.state.desainer.map((desainer) => {
                         return (
                             <div className='box'>
                                 <div className='product mtop'>
                                     <div className='img'>
-                                        <span className='discount' key={konveksi.id}>{konveksi.rating}% Off</span>
-                                        <img key={konveksi.id} src={konveksi.img_profil} alt='' />
+                                        <span className='discount' key={desainer.id}>{desainer.rating}% Off</span>
+                                        <img key={desainer.id} src={desainer.img_profil} alt='' />
                                         <div className='product-like'>
                                             <label>{}</label> <br />
                                             <i className='fa-regular fa-heart' ></i>
                                         </div>
                                     </div>
                                     <div className='product-details'>
-                                        <h4 className="tengah" key={konveksi.id}>{konveksi.nama}</h4>
+                                        <h4 className="tengah" key={desainer.id}>{desainer.nama}</h4>
                                         <div className="tengah">
                                             <div className='rate'>
                                                 <i className='fa fa-star'></i>
@@ -87,7 +86,7 @@ class ListKonveksi extends Component {
                                         </div>
                                         <div className="tengah">
                                             <div className='price'>
-                                                <h3 key={konveksi.id}>{konveksi.rating} </h3>
+                                                <h3 key={desainer.id}>{desainer.tarif} </h3>
                                                 {/* step : 3
                                                 if hami le button ma click garryo bahne
                                                 */}
@@ -110,4 +109,4 @@ class ListKonveksi extends Component {
     }
 }
 
-export default ListKonveksi;
+export default ListDesainer;

@@ -8,6 +8,7 @@ import Cart from "./common/Cart/Cart"
 import Footer from "./common/footer/Footer"
 import Sdata from "./components/shops/Sdata"
 import ListKonveksi from "./components/TopMitra/ListKonveksi"
+import ListDesainer from "./components/TopDesainer/ListDesainer"
 
 function App() {
   /*
@@ -73,8 +74,12 @@ function App() {
       <Router>
         <Header CartItem={CartItem} />
         <Switch>
+        <Route path='/cart' exact>
+            <Cart CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} />
+          </Route>
           <Route path='/' exact>
             <Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems} />
+            <ListDesainer/>
             <ListKonveksi/>
           </Route>
         </Switch>
