@@ -30,6 +30,11 @@
   align-items: center;
 }
 
+.img img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
 
 .price button {
   color: #0F70B7;
