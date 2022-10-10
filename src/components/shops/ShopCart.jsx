@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import "./style.css"
 
 const ShopCart = ({ shopItems, addToCart }) => {
   const [count, setCount] = useState(0)
