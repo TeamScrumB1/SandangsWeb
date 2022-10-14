@@ -1,7 +1,7 @@
 import React from "react"
 import logo from "../../components/assets/images/logo.svg"
 import { Link } from "react-router-dom"
-import "./Header.css"
+import "./Search.css"
 // import Button from 'react-bootstrap/Button';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -35,12 +35,12 @@ const Search = ({ CartItem }) => {
 
           <div className='button1'>
             <div className='button'></div>
-            <button type="button" class="btn btn-outline-primary">Login</button>
+            <button class="btn btn-outline-primary">Login</button>
           </div>
 
           <div className='button2'>  
           <div className='button'></div>
-          <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="true" autocomplete="off"> Sign Up </button>
+          <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="true" autocomplete="on"> Daftar </button>
           </div>
         </div>
       </section>

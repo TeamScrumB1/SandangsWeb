@@ -1,23 +1,28 @@
+import Button from "./Button"
+import ButtonFroom from "./ButtonFroom"
+import ButtonMall from "./ButtonMall"
+import ButtonMitra from "./ButtonMitra"
+import ButtonPre from "./ButtonPre"
 const Ddata = [
   {
     cover: "./images/discount/designer01.png",
-    name: <button className='btn-primary'>Desainer</button>,
+    name: <Button/>
   },
   {
     cover: "./images/discount/PO3.png",
-    name: <button className='btn-primary'>Pre Order</button>,
+    name: <ButtonPre/>
   },
   {
     cover: "./images/discount/mall2.png",
-    name: <button className='btn-primary'>Mall</button>,
+    name: <ButtonMall/>,
   },
   {
     cover: "./images/discount/MP4.png",
-    name: <button className='btn-primary'>Mitra Produksi</button>,
+    name: <ButtonMitra/>,
   },
   {
     cover: "./images/discount/FR5.png",
-    name: <button className='btn-primary'>Fitting Room</button>,
+    name: <ButtonFroom/>,
   },
 ]
 export default Ddata

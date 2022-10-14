@@ -1,19 +1,19 @@
-import React from "react"
-import Categories from "./Categories"
-import "./Home.css"
-import SliderHome from "./Slider"
+import React from "react";
+import Categories from "./Categories";
+import "./Home.css";
+import SliderHome from "./Slider";
 
 const Home = () => {
   return (
-    <>
-      <section className='home'>
-        <div className='container d_flex'>
+    <div style={{ maxWidth: "100%" }}>
+      <section className="home">
+        <div className="d_flex" style={{ minWidth: "100%" }}>
           {/* <Categories /> */}
           <SliderHome />
         </div>
       </section>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default Home
+export default Home;

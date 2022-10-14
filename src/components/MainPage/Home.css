@@ -3,6 +3,13 @@
   line-height: 55px;
   margin: 50px 0 20px 0;
 }
+.slideCard .carousel {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .homeSlide p {
   margin: 20px 0;
 }
@@ -35,3 +42,4 @@
 .box.f_flex:hover {
   background-color: #6dc2ff;
 }
+
