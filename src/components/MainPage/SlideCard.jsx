@@ -1,8 +1,8 @@
-import React from "react"
-import Sdata from "./Sdata"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import React from "react";
+import Sdata from "./Sdata";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const SlideCard = () => {
   const settings = {
@@ -12,31 +12,20 @@ const SlideCard = () => {
     slidesToScroll: 1,
     autoplay: true,
     appendDots: (dots) => {
-      return <ul style={{ margin: "0px" }}>{dots}</ul>
+      return <ul style={{ margin: "0px" }}>{dots}</ul>;
     },
-  }
+  };
   return (
-    <>
-      <Slider {...settings}>
-        {Sdata.map((value, index) => {
-          return (
-            <>
-              <div className='box d_flex top' key={index}>
-                <div className='left'>
-                  <h1>{value.title}</h1>
-                  <p>{value.desc}</p>
-                  <button className='btn-primary'>Visit Collections</button>
-                </div>
-                <div className='right'>
-                  <img src={value.cover} alt='' />
-                </div>
-              </div>
-            </>
-          )
-        })}
-      </Slider>
-    </>
-  )
-}
+    <Slider {...settings} style={{ minWidth: "100% !important", margin: "0px auto", width: "100%", maxHeight: "335px", radius: "5px", overflow: "hidden" }}>
+      {Sdata.map((value, index) => {
+        return (
+          <div style={{ minWidth: "100% !important" }} className="center" key={index}>
+            <img src={value.cover} alt="" style={{ margin: "0px auto", width: "100%", height: "100%", margin: "0px auto", marginTop: "-50px",radius: "5px" }} />
+          </div>
+        );
+      })}
+    </Slider>
+  );
+};
 
-export default SlideCard
+export default SlideCard;

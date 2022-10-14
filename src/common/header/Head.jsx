@@ -6,7 +6,7 @@ const Head = () => {
       <section className='head'>
         <div className='container d_flex'>
           <div className='left row'>
-            <i className='fa fa-mobile'></i>
+            <i className='fa fa-mobile fa-lg' aria-hidden="true"></i>
             <label> Download Sandangs Apps</label>
           </div>
           <div className='right row RText'>
