@@ -44,4 +44,4 @@ const Froom = () => {
   );
 };
 
-export default Froom;
+export default Froom
