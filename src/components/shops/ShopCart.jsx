@@ -17,7 +17,7 @@ class ShopCart extends Component {
   constructor(props){
     super(props)
     this.state={
-        desainer:[],
+        produk:[],
         response:'',
         display:"none",
     }
@@ -26,7 +26,7 @@ class ShopCart extends Component {
 componentDidMount(){
     axios.get(api).then(res => {
       this.setState({
-        desainer: res.data.produk
+        produk: res.data.produk
       })
     } )
 }
@@ -34,20 +34,20 @@ componentDidMount(){
 render() {
     return (
         <><>
-                {this.state.desainer.map((desainer) => {
+                {this.state.produk.map((produk) => {
                     return (
                         <div className='box'>
                         <div className='product mtop'>
                           <div className='img'>
-                            <span className='discount' key={desainer.id}>{desainer.discount}% Off</span>
-                            <img src={desainer.img_produk} key={desainer.id} alt='' />
+                            <span className='discount' key={produk.id}>{produk.rating}% Off</span>
+                            <img src={produk.img_produk} key={produk.id} alt='' />
                             <div className='product-like'>
                               <label>{}</label> <br />
                               <i className='fa-regular fa-heart' onClick={{}}></i>
                             </div>
                           </div>
                           <div className='product-details'>
-                            <h3 key={desainer.id}>{desainer.nama}</h3>
+                            <h3 key={produk.id}>{produk.nama}</h3>
                             <div className='rate'>
                               <i className='fa fa-star'></i>
                               <i className='fa fa-star'></i>
@@ -56,7 +56,7 @@ render() {
                               <i className='fa fa-star'></i>
                             </div>
                             <div className='price'>
-                              <h4 key={desainer.id}>Rp {desainer.harga} </h4>
+                              <h4 key={produk.id}>Rp {produk.harga} </h4>
                               <button onClick={{}}>
                                 <i className='fa fa-plus'></i>
                               </button>
