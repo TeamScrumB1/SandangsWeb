@@ -37,7 +37,7 @@ const SampleNextArrow = (props) => {
   }
   
 
-const api = 'https://api.yufagency.com/konveksi'
+const api = 'https://fashionizt.yufagency.com/koneksi_konveksi.php'
 
 class ListKonveksi extends Component {
     constructor(props){
