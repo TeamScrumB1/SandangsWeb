@@ -1,9 +1,28 @@
-import React from "react"
 import "./style.css"
+import React, { useState, useEffect } from "react"
+import axios from 'axios';
 
 const Cart = ({ CartItem, addToCart, decreaseQty }) => {
   // Stpe: 7   calucate total of items
-  const totalPrice = CartItem.reduce((price, item) => price + item.qty * item.price, 0)
+  const totalPrice = CartItem.reduce((price, item) => price + item.qty * item.harga, 0)
+
+  const [item, setData] = useState();
+
+  useEffect(() => {
+      // Make a request for a user with a given ID
+      axios.get('https://fashionizt.yufagency.com/koneksi_produk.php')
+      .then((res) =>{
+        const responseData = res.data.produk
+        setData(responseData);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
+      .finally(function () {
+        // always executed
+      });
+  }, []);
 
   // prodcut qty total
   return (
@@ -16,19 +35,20 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
             {CartItem.length === 0 && <h1 className='no-items product'>No Items are add in Cart</h1>}
 
             {/* yasma hami le cart item lai display garaaxa */}
-            {CartItem.map((item) => {
-              const productQty = item.price * item.qty
+            {item && CartItem.map((item) => {
+              const {id, nama, img_produk, harga} = item;
+              const productQty = item.harga * item.qty
 
               return (
-                <div className='cart-list product d_flex' key={item.id}>
+                <div className='cart-list product d_flex' key={id}>
                   <div className='img'>
-                    <img src={item.cover} alt='' />
+                    <img src={img_produk} alt='' key={id}/>
                   </div>
                   <div className='cart-details'>
-                    <h3>{item.name}</h3>
-                    <h4>
-                      ${item.price}.00 * {item.qty}
-                      <span>${productQty}.00</span>
+                    <h3 key={id}>{nama}</h3>
+                    <h4 key={id}>
+                      Rp {item.harga} * {item.qty}
+                      <span>Rp {productQty}</span>
                     </h4>
                   </div>
                   <div className='cart-items-function'>
@@ -41,10 +61,10 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
                     product ko qty lai inc ra des garne
                     */}
                     <div className='cartControl d_flex'>
-                      <button className='incCart' onClick={() => addToCart(item)}>
+                      <button className='incCart' onClick={() => addToCart(item)} key={id}>
                         <i className='fa-solid fa-plus'></i>
                       </button>
-                      <button className='desCart' onClick={() => decreaseQty(item)}>
+                      <button className='desCart' onClick={() => decreaseQty(item)} key={id}>
                         <i className='fa-solid fa-minus'></i>
                       </button>
                     </div>
@@ -57,10 +77,10 @@ const Cart = ({ CartItem, addToCart, decreaseQty }) => {
           </div>
 
           <div className='cart-total product'>
-            <h2>Cart Summary</h2>
+            <h2>Total Harga Keranjang</h2>
             <div className=' d_flex'>
-              <h4>Total Price :</h4>
-              <h3>${totalPrice}.00</h3>
+              <h4>Total Harga :</h4>
+              <h3>Rp {totalPrice}</h3>
             </div>
           </div>
         </div>
