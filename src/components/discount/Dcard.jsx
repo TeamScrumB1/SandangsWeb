@@ -9,7 +9,7 @@ const Dcard = () => {
   const settings = {
     dots: false,
     infinite: false,
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: false,
   }
