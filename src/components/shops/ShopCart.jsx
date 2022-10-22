@@ -32,8 +32,8 @@ class ShopCart extends Component {
   }
   
   masukKeranjang = (value) => {
-    
-    axios.post('https://api.yufagency.com/keranjang', value)
+    axios
+        .post('https://api.yufagency.com/keranjang', value)
         .then(response => 
           this.setState({ id: response.data.keranjang }))
         .catch(error => {

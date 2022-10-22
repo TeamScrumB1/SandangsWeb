@@ -19,11 +19,9 @@ export default class HomeFittingRoom extends Component {
     return (
       <div>
         <div className="container-fluid">
-          <div className="row">
-          </div>
-          <hr className="style13" />
-          <div className="row">
-            <div className="col-lg-8 col-sm-8">
+          <hr className="style13"></hr> 
+          <div className="d_flex">
+            <div className="col-lg-8 col-sm-5">
               <BtnGroup />
               <Store getSelectedItemApp={this.getSelectedItemApp.bind(this)} />
             </div>
@@ -31,6 +29,7 @@ export default class HomeFittingRoom extends Component {
               <Contain selectedItem={this.state.selectedItem} />
             </div>
           </div>
+          
         </div>
       </div>
     );

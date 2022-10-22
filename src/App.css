@@ -11,6 +11,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #ffffff;
 }
+
 .background {
   background: #f6f9fc;
   padding: 50px 0;
@@ -53,9 +54,7 @@ button {
   outline: none;
   background-color: none;
 }
-.row {
-  width: 50%;
-}
+
 .icon-circle {
   width: 50px;
   height: 50px;
@@ -102,15 +101,7 @@ button {
 }
 
 /*---------category----------*/
-.btn-primary {
-  background: #e94560;
-  padding: 13px 40px;
-  font-weight: bold;
-  color: #fff;
-  border-radius: 5px;
-  cursor: pointer;
-  box-sizing: border-box;
-}
+
 .top {
   margin-top: 80px;
 }
@@ -248,11 +239,39 @@ button {
 }
 .grid2 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 10px;
 }
 
-/* Fitting Room CSS */
+/* ---------Fitting Room CSS------------- */
+
+.btn-danger{
+  color: #f3f5f9;
+  background-color: #e94560;
+  border-color: #651623;
+  padding: 13px 20px;
+}
+
+.btn-primary {
+  background: #0F70B7;
+  padding: 13px 20px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.thumbnail .caption{
+  padding: 50px;
+}
+
+
+
+.row {
+  width: 90%;
+}
+
 .App {
   text-align: center;
 }
@@ -327,14 +346,14 @@ button {
   right: 0;
 }
 .card.hovercard .useravatar img {
- /* width: 100px;
+ width: 100px;
   height: 100px;
   max-width: 100px;
   max-height: 100px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 5px solid rgba(255, 255, 255, 0.5);*/
+  border: 5px solid rgba(255, 255, 255, 0.5);
 }
 .card.hovercard .card-info {
   position: absolute;
@@ -367,10 +386,10 @@ button {
   -webkit-border-radius:0 !important;
 }
 hr.style13 {
-  height: 10px;
+  height: 30px;
   border: 0;
-  box-shadow: 0 10px 10px -10px #8c8b8b inset;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
