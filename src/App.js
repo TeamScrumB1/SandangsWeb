@@ -7,9 +7,9 @@ import Data from "./components/Data"
 import Cart from "./common/Cart/Cart"
 import Footer from "./common/footer/Footer"
 import Sdata from "./components/shops/Sdata"
-import Froom from "./components/FittingRoom/FRoom"
-import ShopCart from "./components/shops/ShopCart"
 import Shop from "./components/shops/Shop"
+import HomeFittingRoom from "./Screen/HomeFittingRoom"
+
 
 function App() {
   /*
@@ -82,7 +82,7 @@ function App() {
             <Pages productItems={productItems} addToCart={addToCart} shopItems={shopItems} />
           </Route>
           <Route path='/fittingroom' exact>
-              <Froom/>
+                <HomeFittingRoom/>
               <Shop/>
           </Route>
         </Switch>

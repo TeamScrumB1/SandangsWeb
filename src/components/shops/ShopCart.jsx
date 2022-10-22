@@ -1,77 +1,103 @@
-//import React, { useState } from "react"
-
-//const ShopCart = ({ addToCart, shopItems }) => {
-//  const [count, setCount] = useState(0)
-//  const increment = () => {
-//    setCount(count + 1)
-//  }
-
-//  return (
-//    <>
-//      {shopItems.map((shopItems) => {
-//        return (
-//          <div className='product mtop'>
-//            <div className='img'>
-//              <span className='discount'>{shopItems.discount}% Off</span>
-//              <img src={shopItems.cover} alt='' />
-//              <div className='product-like'>
-//                <label>{count}</label> <br />
-//                <i className='fa-regular fa-heart' onClick={increment}></i>
-//              </div>
-//            </div>
-//            <div className='product-details'>
-//              <h3>{shopItems.name}</h3>
-//              <div className='rate'>
-//                <i className='fa fa-star'></i>
-//                <i className='fa fa-star'></i>
-//                <i className='fa fa-star'></i>
-//                <i className='fa fa-star'></i>
-//                <i className='fa fa-star'></i>
-//              </div>
-//              <div className='price'>
-//                <h4>${shopItems.price}.00 </h4>
-//                <button onClick={() => addToCart(shopItems)}>
-//                  <i className='fa fa-plus'></i>
-//                </button>
-//              </div>
-//            </div>
-//          </div>
-//        )
-//      })}
-//    </>
-//  )
-//}
-
-//export default ShopCart
-
-
-
 import React, { Component } from "react"
 import axios from 'axios';
 
-const api = 'https://api.yufagency.com/produk'
-
+const api1 = 'https://api.yufagency.com/produk'
+// const api2 = 'https://api.yufagency.com/keranjang'
 class ShopCart extends Component {
   constructor(props){
     super(props)
     this.state={
       produk:[],
-        response:'',
-        display:"none",
-        keranjangs:[]
+      response:'',
+      display:"none",
+      keranjang:[]
     }
 }
 
     componentDidMount(){
-      axios.get(api).then(res => {
+      axios
+      .get(api1)
+      .then(res => {
         this.setState({
           produk: res.data.produk
         })
       } )
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      })
   }
   
   masukKeranjang = (value) => {
-    console.log("Produk : ", value)
+    
+    axios.post('https://api.yufagency.com/keranjang', value)
+        .then(response => 
+          this.setState({ id: response.data.keranjang }))
+        .catch(error => {
+            this.setState({ errorMessage: error.message });
+            console.error('There was an error!', error);
+        });
+    
+    // console.log("Ojec:", value)
+    // axios
+    // .get(api2 + ".id=" +value.id)
+    // .then(res => {
+    //   if(res.data.length === 0){
+    //       // console.log("Produk :", value)  
+    //         const keranjang = {
+    //           jumlah : 1,
+    //           total_harga: value.harga,
+    //           produk: value
+    //         }
+    //           axios
+    //           .post(api2, keranjang)
+    //           .then(res => {
+    //             swal({
+    //               title: "Berhasil Masuk Keranjang",
+    //               text: "Kamu berhasil masukan ke keranjang"+keranjang.produk.nama,
+    //               icon: "success",
+    //               timer:1500,
+    //             });
+    //             this.setState({
+    //               keranjang: res.data.keranjang
+    //             })
+    //           } )
+    //           .catch(function (error) {
+    //             // handle error
+    //             console.log(error);
+    //           })
+    //   } else{
+    //     const keranjang = {
+    //       jumlah : res.data[0].keranjang.jumlah+1,
+    //       total_harga: res.data[0].keranjang.total_harga+value.harga,
+    //       produk: value
+    //     }
+    //     axios
+    //           .put(api2,"/"+ res.data[0].keranjang.id, keranjang)
+    //           .then(res => {
+    //             swal({
+    //               title: "Berhasil Masuk Keranjang",
+    //               text: "Kamu berhasil masukan ke keranjang"+keranjang.produk.nama,
+    //               icon: "success",
+    //               timer:1500,
+    //             });
+    //             this.setState({
+    //               keranjang: res.data.keranjang
+    //             })
+    //           } )
+    //           .catch(function (error) {
+    //             // handle error
+    //             console.log(error);
+    //           })
+    //   }
+    // } )
+    // .catch(function (error) {
+    //   // handle error
+    //   console.log(error);
+    // })
   }
 
   render() {
@@ -82,15 +108,15 @@ class ShopCart extends Component {
                           <div className='box'>
                           <div className='product mtop'>
                             <div className='img'>
-                              <span className='discount' key={produk.id} masukKeranjang={this.masukKeranjang}>{produk.discount}% Off</span>
-                              <img src={produk.img_produk} key={produk.id} alt='' masukKeranjang={this.masukKeranjang} />
+                              <span className='discount' key={produk.id} >{produk.discount}% Off</span>
+                              <img src={produk.img_produk} key={produk.id} alt=''  />
                               <div className='product-like'>
                                 <label>{}</label> <br />
                                 <i className='fa-regular fa-heart' onClick={{}}></i>
                               </div>
                             </div>
                             <div className='product-details'>
-                              <h3 key={produk.id} masukKeranjang={this.masukKeranjang}>{produk.nama}</h3>
+                              <h3 key={produk.id} >{produk.nama}</h3>
                               <div className='rate'>
                                 <i className='fa fa-star'></i>
                                 <i className='fa fa-star'></i>
@@ -99,7 +125,7 @@ class ShopCart extends Component {
                                 <i className='fa fa-star'></i>
                               </div>
                               <div className='price'>
-                                <h4 key={produk.id} masukKeranjang={this.masukKeranjang}>Rp {produk.harga} </h4>
+                                <h4 key={produk.id} >Rp {produk.harga} </h4>
                                 <button onClick={() => this.masukKeranjang(produk)}>
                                   <i className='fa fa-plus'></i>
                                 </button>
@@ -112,6 +138,6 @@ class ShopCart extends Component {
               </></>
       );
   }
-    }
+}
 
 export default ShopCart;
