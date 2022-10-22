@@ -12,6 +12,7 @@ const Footer = () => {
               dan bisa custom sendiri baju yang diinginkan oleh desainer dan konveksi pilihan anda sendiri
             </p>
             <div className='icon d_flex'>
+              
               <div className='img d_flex'>
                 <i class='fa-brands fa-google-play'></i>
                 <span>Google Play</span>

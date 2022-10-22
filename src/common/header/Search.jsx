@@ -1,5 +1,4 @@
 import React from "react"
-import logo from "../../components/assets/images/logo.svg"
 import { Link } from "react-router-dom"
 import "./Search.css"
 // import Button from 'react-bootstrap/Button';
