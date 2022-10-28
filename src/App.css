@@ -383,7 +383,7 @@ button {
   margin-bottom: 17px;
 }
 .btn-pref .btn {
-  -webkit-border-radius:0 !important;
+  border-radius:0 !important;
 }
 hr.style13 {
   height: 30px;
