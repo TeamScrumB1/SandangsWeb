@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import axios from 'axios';
 
-const api1 = 'https://api.yufagency.com/produk'
+const api1 = 'https://fashionizt.yufagency.com/koneksi_produk.php'
 // const api2 = 'https://api.yufagency.com/keranjang'
 class ShopCart extends Component {
   constructor(props){
@@ -108,7 +108,7 @@ class ShopCart extends Component {
                           <div className='box'>
                           <div className='product mtop'>
                             <div className='img'>
-                              <span className='discount' key={produk.id} >{produk.discount}% Off</span>
+                              <span className='discount' key={produk.id} >{produk.rating}% Off</span>
                               <img src={produk.img_produk} key={produk.id} alt=''  />
                               <div className='product-like'>
                                 <label>{}</label> <br />
