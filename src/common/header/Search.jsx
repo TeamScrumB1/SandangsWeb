@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import "./Search.css"
 // import Button from 'react-bootstrap/Button';
 // import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,6 +12,7 @@ const Search = ({ CartItem }) => {
 
   return (
     <>
+    
       <section className='search'>
         <div className='container c_flex'>
           <div className='logo width '>
@@ -22,13 +22,10 @@ const Search = ({ CartItem }) => {
           <div className='search-box f_flex'>
             <i class="fa fa-search"></i>
           </div>
-
           <div className='icon f_flex width'>
             <div className='cart'>
-              <Link to='/cart'>
-              <i className='fa fa-shopping-cart fa-lg icon-circle'></i>
+              <a href="https://play.google.com/store/apps/details?id=com.fashionizt.cloths"><i className='fa fa-shopping-cart fa-lg icon-circle'></i></a>
                 <span>{CartItem.length === 0 ? "" : CartItem.length}</span>
-              </Link>
             </div>
           </div>
 
