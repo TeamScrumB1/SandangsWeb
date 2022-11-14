@@ -2,25 +2,25 @@ import React, { Component } from "react";
 import "./style.css";
 import { Link } from 'react-router-dom';
 
-class SignUp extends Component {
+class SignUpKonveksiSatu extends Component {
   render() {
     return (
       <form>
         <div class="image_signup">
           <img src="././images/sandangs/sandangsblue.png" alt=""></img>
         </div>
-        <h3>Identitas Pribadi</h3>
+        <h3>Identitas Konveksi</h3>
         <div className="mb-3">
-          <label>First name</label>
+          <label>Nomor Induk Berusaha (NIB)</label>
           <input
-            type="text"
+            type="number"
             className="form-control"
-            placeholder="First name"
+            placeholder="Nomor Induk Berusaha (NIB)"
           />
         </div>
         <div className="mb-3">
-          <label>Last name</label>
-          <input type="text" className="form-control" placeholder="Last name" />
+          <label>Alamat</label>
+          <input type="text" className="form-control" placeholder="Alamat" />
         </div>
         <div className="mb-3">
           <label>Email address</label>
@@ -31,23 +31,23 @@ class SignUp extends Component {
           />
         </div>
         <div className="mb-3">
-          <label>Password</label>
+          <label>Nomor Telpon</label>
           <input
-            type="password"
+            type="text"
             className="form-control"
-            placeholder="Enter password"
+            placeholder="Nomor Telpon"
           />
         </div>
         <div className="mb-3">
-          <label>Confirm Password</label>
+          <label>Nomor Pokok Wajib Pajak (NPWP)</label>
           <input
-            type="password"
+            type="text"
             className="form-control"
-            placeholder="Enter password"
+            placeholder="Nomor Pokok Wajib Pajak (NPWP)"
           />
         </div>
         <div className="d-grid">
-          <Link to="/signupkonveksisatu">
+          <Link to="/signupkonveksidua">
           <button type="submit" className="btn btn-primary">
               Next
             </button>
@@ -61,4 +61,4 @@ class SignUp extends Component {
   }
 }
 
-export default SignUp;
+export default SignUpKonveksiSatu;

@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import axios from 'axios';
 
 const api1 = 'https://fashionizt.yufagency.com/koneksi_produk.php'
+// const api1 = 'https://api.yufagency.com/produk'
 // const api2 = 'https://api.yufagency.com/keranjang'
 class ShopCart extends Component {
   constructor(props){
@@ -126,9 +127,11 @@ class ShopCart extends Component {
                               </div>
                               <div className='price'>
                                 <h4 key={produk.id} >Rp {produk.harga} </h4>
+                                <a href="https://play.google.com/store/apps/details?id=com.fashionizt.cloths">
                                 <button onClick={() => this.masukKeranjang(produk)}>
                                   <i className='fa fa-plus'></i>
                                 </button>
+                                </a>
                               </div>
                             </div>
                           </div>

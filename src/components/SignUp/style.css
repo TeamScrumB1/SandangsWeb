@@ -14,6 +14,18 @@
     flex-direction: column;
     text-align: left;
   }
+
+  .image_signup img{
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+  }
+
+  .mb-3{
+    margin-bottom: 5px;
+  }
   
   .auth-inner {
     width: 450px;

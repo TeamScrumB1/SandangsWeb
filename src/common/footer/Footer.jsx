@@ -1,6 +1,7 @@
 import React from "react";
 import "./style.css";
 
+
 const Footer = () => {
   return (
     <>
@@ -16,14 +17,15 @@ const Footer = () => {
               anda sendiri
             </p>
             <div className="icon d_flex">
-              {/* <a href="https://play.google.com/store/apps/details?id=com.fashionizt.cloths">
-            </a> */}
+              <a className="footer" href="https://play.google.com/store/apps/details?id=com.fashionizt.cloths">
               <div className="img d_flex">
                 <a href="https://play.google.com/store/apps/details?id=com.fashionizt.cloths">
-                  <i class="fa-brands fa-google-play"></i>
+                <i class="fa fa-play-circle" aria-hidden="true"></i>
                 </a>
                 <span>Google Play</span>
               </div>
+            </a>
+              
               {/* <div className='img d_flex'>
                 <i class='fa-brands fa-app-store-ios'></i>
                 <span>App Store</span>
