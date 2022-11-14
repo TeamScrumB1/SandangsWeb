@@ -33,7 +33,7 @@ class SignUpKonveksiDua extends Component {
         <div className="d-grid">
           <Link to="/signupkonveksidua">
             <button type="submit" className="btn btn-primary">
-              Next
+              Submit
             </button>
           </Link>
         </div>
