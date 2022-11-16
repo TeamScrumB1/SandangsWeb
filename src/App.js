@@ -9,9 +9,9 @@ import Footer from "./common/footer/Footer";
 import Sdata from "./components/shops/Sdata";
 import Shop from "./components/shops/Shop";
 import HomeFittingRoom from "./Screen/HomeFittingRoom";
-import SignUp from "./components/SignUp/SignUp";
-import SignUpKonveksiSatu from "./components/SignUp/SignUpKonveksiSatu";
-import SignUpKonveksiDua from "./components/SignUp/SignUpKonveksiDua";
+import SignUpAwal from "./components/SignUp/SignUpAwal";
+import SignUpDesainer from "./components/SignUp/SignUpDesainer";
+import SignUpKonveksi from "./components/SignUp/SignUpKonveksi";
 
 
 function App() {
@@ -111,27 +111,29 @@ function App() {
             <Shop />
             <Footer />
           </Route>
-          <Route path="/signup" exact>
+          <Route path="/signupawal" exact>
             <Header CartItem={CartItem} />
             <div className="auth-wrapper">
               <div className="auth-inner">
-                <SignUp />
+                <SignUpAwal/>
               </div>
+              <Footer />
             </div>
           </Route>
-          <Route path="/signupkonveksisatu" exact>
+          <Route path="/signupkonveksi" exact>
             <Header CartItem={CartItem} />
             <div className="auth-wrapper">
               <div className="auth-inner">
-                <SignUpKonveksiSatu/>
+                <SignUpKonveksi/>
               </div>
+              <Footer />
             </div>
           </Route>
-          <Route path="/signupkonveksidua" exact>
+          <Route path="/signupdesainer" exact>
             <Header CartItem={CartItem} />
             <div className="auth-wrapper">
               <div className="auth-inner">
-                <SignUpKonveksiDua/>
+                <SignUpDesainer/>
               </div>
             </div>
           </Route>

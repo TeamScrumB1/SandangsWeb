@@ -38,7 +38,7 @@ const Search = ({ CartItem }) => {
             </a>
           </div>
           <div className="button2">
-            <Link to="/signup">
+            <Link to="/signupawal">
               <button
                 type="button"
                 class="btn btn-primary"

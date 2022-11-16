@@ -7,21 +7,18 @@ class SignUpAwal extends Component {
     return (
       <form>
         <div class="image_signup">
-          <img src="././images/sandangs/sandangsblue.png" alt=""></img>
+          <img src="././images/sandangs/sandangsbiru.png" alt=""></img>
         </div>
-        <h3>Identitas Pribadi</h3>
-        <div className="mb-3">
-          <label>Login as Customer</label>
-          <input
-            type="radio"
-            className="form-control"
-            placeholder="Login as Customer"
-          />
-        </div>
-        <div className="d-grid">
-          <Link to="/signupkonveksisatu">
-          <button type="submit" className="btn btn-primary">
-              Next
+        <h4>Silahkan pilih dahulu Sign Up anda</h4>
+        <div className="d-grid d_flex">
+          <Link to="/signupkonveksi">
+          <button type="submit" className="btn btn-primary2">
+              Sign Up as Konveksi
+            </button>
+          </Link>
+          <Link to="/signupdesainer">
+          <button type="submit" className="btn btn-primary2">
+              Sign Up as Desainer
             </button>
           </Link>
         </div>
