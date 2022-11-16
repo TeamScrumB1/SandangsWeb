@@ -4,6 +4,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.footer a {
+    color: #ffffff;
+}
+
+.footer span {
+  color: #ffffff;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -32,10 +41,7 @@ body {
 .f_flex {
   display: flex;
 }
-a {
-  text-decoration: none;
-  color: black;
-}
+
 li {
   list-style: none;
 }

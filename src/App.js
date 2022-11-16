@@ -10,6 +10,9 @@ import Sdata from "./components/shops/Sdata";
 import Shop from "./components/shops/Shop";
 import HomeFittingRoom from "./Screen/HomeFittingRoom";
 import SignUp from "./components/SignUp/SignUp";
+import SignUpKonveksiSatu from "./components/SignUp/SignUpKonveksiSatu";
+import SignUpKonveksiDua from "./components/SignUp/SignUpKonveksiDua";
+
 
 function App() {
   /*
@@ -84,14 +87,7 @@ function App() {
 
   return (
     <>
-      <link
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        rel="stylesheet"
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-        crossorigin="anonymous"
-      ></link>
       <Router>
-        <Header CartItem={CartItem} />
         <Switch>
           <Route path="/cart" exact>
             <Cart
@@ -101,25 +97,45 @@ function App() {
             />
           </Route>
           <Route path="/" exact>
+            <Header CartItem={CartItem} />
             <Pages
               productItems={productItems}
               addToCart={addToCart}
               shopItems={shopItems}
             />
+            <Footer />
           </Route>
           <Route path="/fittingroom" exact>
+            <Header CartItem={CartItem} />
             <HomeFittingRoom />
             <Shop />
+            <Footer />
           </Route>
           <Route path="/signup" exact>
+            <Header CartItem={CartItem} />
             <div className="auth-wrapper">
               <div className="auth-inner">
                 <SignUp />
               </div>
             </div>
           </Route>
+          <Route path="/signupkonveksisatu" exact>
+            <Header CartItem={CartItem} />
+            <div className="auth-wrapper">
+              <div className="auth-inner">
+                <SignUpKonveksiSatu/>
+              </div>
+            </div>
+          </Route>
+          <Route path="/signupkonveksidua" exact>
+            <Header CartItem={CartItem} />
+            <div className="auth-wrapper">
+              <div className="auth-inner">
+                <SignUpKonveksiDua/>
+              </div>
+            </div>
+          </Route>
         </Switch>
-        <Footer />
       </Router>
     </>
   );
