@@ -3,53 +3,6 @@ import "./style.css";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-function PostApi() {
-  const url = "http://api.yufagency.com/signup_desainer";
-  const [postdata, setPostdata] = useState([]);
-
-
-  // const getDataPost = async () => {
-  //   const response = await fetch(url);
-  //   const dataPost = await response.json();
-  //   setPostdata(dataPost);
-  //   console.log(postdata);
-  // };
-
-
-  useEffect(() => {
-    getDataPost();
-  }, []);
-
-  async function getDataPost()
-  {
-    let result = await fetch("http://api.yufagency.com/signup_desainer");
-    result = await result.json();
-    setPostdata(result.reverse())
-    console.log(result);
-    
-  }
-
-  return (
-    <div className="Post">
-      {postdata.map((item) => {
-        return (
-            <CardPost 
-                key={item.IdPost} 
-                idPost={item.IdPost}
-                id={item.IdPengepost} 
-                nama={item.NamaPengepost} 
-                judul={item.JudulPost} 
-                isi={item.IsiPost} 
-                tgl={item.created_at} 
-                image={item.img_path}
-                 />
-        );
-      })}
-    </div>
-  );
-};
-
-
 function SignUpDesainer() {
 
   const url = "http://api.yufagency.com/signup_desainer";
