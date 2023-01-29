@@ -14,7 +14,7 @@ const Search = ({ CartItem }) => {
   return (
     <>
       <section className="search">
-        <div className="container c_flex">
+        <div className="container d_flex">
           <Link to="/">
             <div className="logo width ">
               <img src="././images/sandangs/sandangsblue.png" alt=""></img>
@@ -37,17 +37,9 @@ const Search = ({ CartItem }) => {
               <button class="btn-primary">Login</button>
             </a>
           </div>
-          <div className="button2">
-            <Link to="/signupawal">
-              <button
-                type="button"
-                class="btn btn-primary"
-                aria-pressed="true"
-                autocomplete="on"
-              >
-                {" "}
-                Daftar{" "}
-              </button>
+          <div className="button4">
+          <Link to="/signupawal">
+              <button class="btn btn-primary" > Daftar </button>
             </Link>
           </div>
         </div>

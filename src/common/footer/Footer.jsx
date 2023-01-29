@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="container grid2">
+        <div className="grid2">
           <div className="box-1">
             <img src="././images/sandangs/sandangswhite.png" alt=""></img>
             <p>

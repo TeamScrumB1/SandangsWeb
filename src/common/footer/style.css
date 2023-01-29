@@ -3,11 +3,6 @@ footer .box-1 img{
   margin-bottom: -15px;
 }
 
-footer .box-1{
-  padding-right: 80px;
-  margin-left: -200px;
-}
-
 footer {
   background-color: #0F70B7;
   padding: 20px;
@@ -21,7 +16,7 @@ footer h1 {
 }
 footer .img {
   background-color: #072b53;
-  padding: 15px 20px;
+  padding: 15px;
   border-radius: 5px;
 }
 footer .img i {
